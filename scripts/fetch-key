@@ -1,0 +1,27 @@
+#!/bin/sh
+
+set -e
+
+prg=$(basename $0)
+
+usage () {
+	echo "Usage: ${prg} <url>"
+}
+
+die () {
+	echo "** Error: $*"
+	usage
+	exit 1
+}
+
+url="$1"
+
+[ -n "$url" ] || die "Invalid arguments"
+
+#echo>&2 "$url"
+wget -q --header="Content-Type: text/text" -O - "$url" | awk -- '
+BEGIN { silent=1 }
+/-----BEGIN PGP/ { silent=0 }
+{ if (!silent) print }
+/-----END PGP/ { silent=1 }
+'

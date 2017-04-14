@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -e
+
+packages () {
+  local IFS=",|"
+  echo $(dpkg-query -f '${Depends}' -W "$1" | sed 's/([^)]*)//g')
+}
+
+if [ "$1" = "configure" ]; then
+  pkgs=$(apt-mark showauto $(packages "${DPKG_MAINTSCRIPT_PACKAGE}"))
+  test "${pkgs}" && apt-mark manual ${pkgs} >/dev/null || true
+fi
+
+#DEBHELPER#

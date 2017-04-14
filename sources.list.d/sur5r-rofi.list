@@ -1,0 +1,2 @@
+deb http://debian.sur5r.net/rofi $DIST universe
+# deb-src http://debian.sur5r.net/rofi $DIST universe

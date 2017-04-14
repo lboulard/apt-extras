@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+  echo ""
+  echo " NOTE: Run \"apt-get update\" after installing this package."
+fi
+
+#DEBHELPER#
+
+exit 0

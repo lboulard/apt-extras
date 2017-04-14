@@ -1,0 +1,50 @@
+Source: ubuntu-lboulard
+Section: misc
+Priority: optional
+Maintainer: Laurent Boulard <laurent.boulard@gmail.com>
+Build-Depends: debhelper (>=9), gnupg, wget, lsb-release
+Standards-Version: 3.9.7
+
+Package: local+apt-extras
+Architecture: all
+Depends: gpgv, ${misc:Depends}
+Recommends: gnupg
+Description: Keyrings and sources for foreign repositories and PPA
+ This install keyring for following locations:
+   - https://launchpad.net/~laurent-boulard
+   - http://debian.sur5r.net/
+   - https://launchpad.net/~git-core
+ .
+ Those APT repositories are registered:
+   - ppa:laurent-boulard/vim
+   - ppa:laurent-boulard/i3
+   - ppa:laurent-boulard/devtools
+   - ppa:laurent-boulard/fonts
+   - ppa:git-core/ppa
+   - http://debian.sur5r.net/i3
+   - http://debian.sur5r.net/rofi
+
+Package: local+headless
+Architecture: all
+Depends: ${misc:Depends}, vim-nox | vim-gtk, htop, zsh, zsh-doc, stow,
+ git, tig, ack-grep, silversearcher-ag, tmux, tree
+Description: Install all needed packages for headless usage
+ This is an empty package to install required packages for headless setup.
+
+Package: local+desktop
+Architecture: all
+Depends: ${misc:Depends}, terminator, rxvt-unicode, vim-gtk, htop, i3-wm,
+ i3status, i3lock, dunst, rofi, suckless-tools, fonts-dejavu-core, conky,
+ luajit, nitrogen, zsh, zsh-doc, stow, gitk, git-gui, silversearcher-ag,
+ ack-grep, tmux, tree, fonts-font-awesome, meld
+Recommends: fonts-iosevka, fonts-iosevka-term, fonts-iosevka-slab,
+ fonts-iosevka-term-slab
+Description: Install all needed packages for desktop usage
+ This is an empty package to install required packages for desktop setup.
+
+Package: local+devel
+Architecture: all
+Depends: ${misc:Depends}, build-essential, git, tig, quilt, devscripts,
+ pbuilder, cowbuilder, git-buildpackage
+Description: Install all needed packages for development
+ This is an empty package to install used packages for development on platform.

@@ -1,0 +1,45 @@
+#!/bin/sh
+# This script can be called in the following ways:
+#
+# After the package was installed:
+#       <postinst> configure <old-version>
+#
+#
+# If prerm fails during upgrade or fails on failed upgrade:
+#       <old-postinst> abort-upgrade <new-version>
+#
+# If prerm fails during deconfiguration of a package:
+#       <postinst> abort-deconfigure in-favour <new-package> <version>
+#                  removing <old-package> <version>
+#
+# If prerm fails during replacement due to conflict:
+#       <postinst> abort-remove in-favour <new-package> <version>
+
+set -e
+
+packages () {
+  local IFS=",|"
+  echo $(dpkg-query -f '${Depends}' -W "$1" | sed 's/([^)]*)//g')
+}
+
+case "$1" in
+  configure)
+    pkgs=$(apt-mark showauto $(packages "${DPKG_MAINTSCRIPT_PACKAGE}"))
+    test "${pkgs}" && apt-mark manual ${pkgs} >/dev/null || true
+    # Add the pbuilder group unless it's already there
+    if ! getent group pbuilder >/dev/null; then
+      addgroup --quiet --system pbuilder || true
+      echo "% Run 'sudo usermod -a -G pbuilder \$USER' to use pbuilder with sudo"
+    fi
+    ;;
+  abort-upgrade|abort-deconfigure|abort-remove)
+    ;;
+  *)
+    echo "$0 called with unknown argument \`$1'" 1>&2
+    exit 1
+    ;;
+esac
+
+#DEBHELPER#
+
+exit 0

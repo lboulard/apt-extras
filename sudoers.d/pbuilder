@@ -1,0 +1,9 @@
+# password less sudo for building packages
+
+Cmnd_Alias  PBUILDER = /usr/sbin/pbuilder, /usr/bin/pdebuild, /usr/bin/debuild-pbuilder, /usr/sbin/cowbuilder, /usr/bin/git-pbuilder, /usr/bin/git-buildpackage
+Defaults!PBUILDER  setenv
+Defaults!PBUILDER  env_keep += "DIST ARCH"
+#Defaults!PBUILDER  env_keep += "DISTRIBUTION BUILDRESULT BASEPATH PDEBUILD_BUILDER"
+#Defaults!PBUILDER  env_keep += "DEB_BUILD_PARALLEL DEB_BUILD_OPTIONS"
+
+%pbuilder ALL=(ALL) NOPASSWD: PBUILDER
