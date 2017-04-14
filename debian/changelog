@@ -1,3 +1,9 @@
+ubuntu-lboulard (3-zesty1) zesty; urgency=medium
+
+  * Update version for zesty release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Fri, 14 Apr 2017 19:28:24 +0200
+
 ubuntu-lboulard (3) xenial; urgency=medium
 
   * More details and grammar errors in README.md
