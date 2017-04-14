@@ -1,0 +1,2 @@
+deb http://ppa.launchpad.net/laurent-boulard/ppa/ubuntu $DIST main
+# deb-src http://ppa.launchpad.net/laurent-boulard/ppa/ubuntu $DIST main
