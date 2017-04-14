@@ -1,6 +1,16 @@
-# Install external repository and theirs public keys
+# Install external repositories and theirs public keys
 
-## Create package on host
+Compiled packages can be found at
+<https://launchpad.net/~laurent-boulard/+archive/ubuntu/ppa>.
+
+Binary packages:
+
+  - _local+apt-sources_: external respotiories and ppa:laurent-boulard
+  - _local+headless_: Packages list for headless platform like server
+  - _local+desktop_: Packages list for desktop usage
+  - _local+devel_: Packages list fot basic development
+
+## Create debian packages on host
 
     sudo apt-get install devscripts fakeroot gdebi-core
     fakeroot debian/rules binary
@@ -12,7 +22,8 @@ Use _gbedi_ command to install and fetch packages. For example:
 
 ## Required operation after install
 
-Run `apt-get update` after installing this package to see changes applied.
+Run `apt-get update` after installing _local+apt-sources_ package to see
+changes applied.
 
 # Dummy packages for personalized environment
 
