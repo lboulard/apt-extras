@@ -1,3 +1,9 @@
+ubuntu-lboulard (4-trusty1) trusty; urgency=medium
+
+  * Update version for trusty release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Fri, 14 Apr 2017 21:09:43 +0200
+
 ubuntu-lboulard (4) xenial; urgency=medium
 
   * debian/gbp.conf
