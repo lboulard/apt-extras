@@ -1,3 +1,9 @@
+ubuntu-lboulard (2) xenial; urgency=medium
+
+  * Add ppa:laurent-boulard/ppa repository
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Fri, 14 Apr 2017 17:06:24 +0200
+
 ubuntu-lboulard (1) xenial; urgency=medium
 
   * Initial release.
