@@ -3,6 +3,7 @@ SOURCES=sources.list.d/laurent-boulard-ubuntu-vim.list
 SOURCES+=sources.list.d/laurent-boulard-ubuntu-i3.list
 SOURCES+=sources.list.d/laurent-boulard-ubuntu-devtools.list
 SOURCES+=sources.list.d/laurent-boulard-ubuntu-fonts.list
+SOURCES+=sources.list.d/laurent-boulard-ubuntu-ppa.list
 SOURCES+=sources.list.d/sur5r-i3.list
 SOURCES+=sources.list.d/sur5r-rofi.list
 SOURCES+=sources.list.d/git-core-ubuntu-ppa.list
