@@ -1,3 +1,10 @@
+ubuntu-lboulard (4) xenial; urgency=medium
+
+  * debian/gbp.conf
+  * sudoers.d/pbuilder: push all variables, DIST may not be defined
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Fri, 14 Apr 2017 20:59:25 +0200
+
 ubuntu-lboulard (3-yakkety1) yakkety; urgency=medium
 
   * Update version for yakkety release
