@@ -1,3 +1,9 @@
+ubuntu-lboulard (3-trusty1) trusty; urgency=medium
+
+  * Update version for trusty release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Fri, 14 Apr 2017 19:46:08 +0200
+
 ubuntu-lboulard (3) xenial; urgency=medium
 
   * More details and grammar errors in README.md
