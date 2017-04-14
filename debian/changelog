@@ -1,3 +1,10 @@
+ubuntu-lboulard (3) xenial; urgency=medium
+
+  * More details and grammar errors in README.md
+  * Makefile does not install ppa:laurent-boulard/ppa
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Fri, 14 Apr 2017 17:19:32 +0200
+
 ubuntu-lboulard (2) xenial; urgency=medium
 
   * Add ppa:laurent-boulard/ppa repository
