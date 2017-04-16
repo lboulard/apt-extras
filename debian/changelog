@@ -1,3 +1,9 @@
+ubuntu-lboulard (6-yakkety1) yakkety; urgency=medium
+
+  * Update version for yakkety release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 20:48:52 +0200
+
 buntu-lboulard (6) xenial; urgency=medium
 
   * Missing package for desktop usage with i3
