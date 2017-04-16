@@ -1,3 +1,9 @@
+ubuntu-lboulard (7-zesty1) zesty; urgency=medium
+
+  * Update version for zesty release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 21:37:15 +0200
+
 ubuntu-lboulard (7) xenial; urgency=medium
 
   * 'xz' package does not exists
