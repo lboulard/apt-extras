@@ -26,12 +26,13 @@ Description: Keyrings and sources for foreign repositories and PPA
 
 Package: local+common
 Architecture: all
-Depends: lsb-release, htop, zsh, zsh-doc, stow, git, git-man, tig, ack-grep,
- silversearcher-ag, tree, luajit, lolcat, rig, gnupg, gpgv, xz, xz-utils,
- netcat-openbsd, less, rsync, unzip, usbutils
+Depends: ${misc:Depends}, lsb-release, htop, zsh, zsh-doc, stow, git, git-man,
+ tig, ack-grep, silversearcher-ag, tree, luajit, lolcat, rig, gnupg, gpgv,
+ xz-utils, netcat-openbsd, less, rsync, unzip, usbutils
 Recommends: gnupg2
 Description: Common packages for desktop and headless usage
- Install package local+headless or local+desktop to have a usage setup.
+ Empty package. Install package local+headless or local+desktop to have an
+ usable setup.
 
 Package: local+headless
 Architecture: all
@@ -56,8 +57,7 @@ Depends: ${misc:Depends}, build-essential, git, tig, make, automake, autoconf,
  cscope, strace, gdb, patch, patchutils
 Recommends: global
 Description: Install all needed packages for development
- This is an empty package to install core packages packages for native
- development.
+ This is an empty package to install core packages for native development.
 
 Package: local+devel-dpkg
 Architecture: all
