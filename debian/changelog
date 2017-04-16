@@ -1,3 +1,9 @@
+ubuntu-lboulard (5-yakkety1) yakkety; urgency=medium
+
+  * Update version for yakkety release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 10:11:51 +0200
+
 ubuntu-lboulard (5) xenial; urgency=medium
 
   * Desktop is missing compton compositor for X11
