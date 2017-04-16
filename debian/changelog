@@ -1,3 +1,9 @@
+ubuntu-lboulard (6-zesty1) zesty; urgency=medium
+
+  * Update version for zesty release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 20:54:10 +0200
+
 ubuntu-lboulard (6) xenial; urgency=medium
 
   * Missing package for desktop usage with i3
