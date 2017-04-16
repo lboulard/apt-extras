@@ -1,3 +1,9 @@
+ubuntu-lboulard (5) xenial; urgency=medium
+
+  * Desktop is missing compton compositor for X11
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 10:03:02 +0200
+
 ubuntu-lboulard (4-zesty1) zesty; urgency=medium
 
   * Update version for zesty release
