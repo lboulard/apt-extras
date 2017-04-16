@@ -1,3 +1,9 @@
+ubuntu-lboulard (7-yakkety1) yakkety; urgency=medium
+
+  * Update version for yakkety release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 21:34:19 +0200
+
 ubuntu-lboulard (7) xenial; urgency=medium
 
   * 'xz' package does not exists
