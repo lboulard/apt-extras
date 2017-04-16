@@ -1,3 +1,10 @@
+ubuntu-lboulard (6) xenial; urgency=medium
+
+  * Missing package for desktop usage with i3
+  * Reorganize packages and move dependencies in common packages
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 20:36:42 +0200
+
 ubuntu-lboulard (5-trusty1) trusty; urgency=medium
 
   * Update version for trusty release
