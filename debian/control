@@ -24,28 +24,45 @@ Description: Keyrings and sources for foreign repositories and PPA
    - http://debian.sur5r.net/i3
    - http://debian.sur5r.net/rofi
 
+Package: local+common
+Architecture: all
+Depends: lsb-release, htop, zsh, zsh-doc, stow, git, git-man, tig, ack-grep,
+ silversearcher-ag, tree, luajit, lolcat, rig, gnupg, gpgv, xz, xz-utils,
+ netcat-openbsd, less, rsync, unzip, usbutils
+Recommends: gnupg2
+Description: Common packages for desktop and headless usage
+ Install package local+headless or local+desktop to have a usage setup.
+
 Package: local+headless
 Architecture: all
-Depends: ${misc:Depends}, vim-nox | vim-gtk, htop, zsh, zsh-doc, stow,
- git, tig, ack-grep, silversearcher-ag, tmux, tree
+Depends: ${misc:Depends}, local+common, vim-nox | vim-gtk, tmux
 Description: Install all needed packages for headless usage
  This is an empty package to install required packages for headless setup.
 
 Package: local+desktop
 Architecture: all
-Depends: ${misc:Depends}, terminator, rxvt-unicode, vim-gtk, htop, i3-wm,
- i3status, i3lock, dunst, rofi, suckless-tools, fonts-dejavu-core, conky,
- luajit, nitrogen, zsh, zsh-doc, stow, gitk, git-gui, silversearcher-ag,
- ack-grep, tmux, tree, fonts-font-awesome, meld, compton, xfonts-terminus,
- xfonts-terminus-oblique
-Recommends: fonts-iosevka, fonts-iosevka-term, fonts-iosevka-slab,
- fonts-iosevka-term-slab, dex
+Depends: ${misc:Depends}, local+common, terminator, rxvt-unicode, vim-gtk,
+ i3-wm, i3status, i3lock, dunst, suckless-tools, fonts-dejavu-core, conky,
+ nitrogen, git-doc, gitk, git-gui, tmux, fonts-font-awesome, meld, compton
+Recommends: gnome-keyring, seahorse, rofi, dex, fonts-iosevka,
+ fonts-iosevka-term, fonts-iosevka-slab, fonts-iosevka-term-slab,
+ xfonts-terminus, xfonts-terminus-oblique, fonts-liberation, ubuntu-wallpapers
 Description: Install all needed packages for desktop usage
  This is an empty package to install required packages for desktop setup.
 
 Package: local+devel
 Architecture: all
-Depends: ${misc:Depends}, build-essential, git, tig, quilt, devscripts,
- pbuilder, cowbuilder, git-buildpackage
+Depends: ${misc:Depends}, build-essential, git, tig, make, automake, autoconf,
+ cscope, strace, gdb, patch, patchutils
+Recommends: global
 Description: Install all needed packages for development
- This is an empty package to install used packages for development on platform.
+ This is an empty package to install core packages packages for native
+ development.
+
+Package: local+devel-dpkg
+Architecture: all
+Depends: ${misc:Depends}, local+devel, fakeroot, quilt, devscripts, pbuilder,
+ cowbuilder, git-buildpackage, sbuild, dpkg-dev
+Recommends: ubuntu-dev-tools
+Description: Install all needed packages for development of debian packages
+ This is an empty package to install used packages for development.
