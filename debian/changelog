@@ -1,3 +1,9 @@
+ubuntu-lboulard (5-trusty1) trusty; urgency=medium
+
+  * Update version for trusty release
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 10:08:26 +0200
+
 ubuntu-lboulard (5) xenial; urgency=medium
 
   * Desktop is missing compton compositor for X11
