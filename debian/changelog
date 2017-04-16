@@ -1,3 +1,10 @@
+ubuntu-lboulard (7) xenial; urgency=medium
+
+  * 'xz' package does not exists
+  * lintian warnings
+
+ -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 21:02:01 +0200
+
 ubuntu-lboulard (6-trusty1) trusty; urgency=medium
 
   * Update version for trusty release
