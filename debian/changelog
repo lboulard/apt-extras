@@ -1,6 +1,7 @@
 ubuntu-lboulard (7) UNRELEASED; urgency=medium
 
   * 'xz' package does not exists
+  * lintian warnings
 
  -- Laurent Boulard <laurent.boulard@gmail.com>  Sun, 16 Apr 2017 21:01:03 +0200
 
