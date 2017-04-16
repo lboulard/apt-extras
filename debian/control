@@ -36,9 +36,10 @@ Architecture: all
 Depends: ${misc:Depends}, terminator, rxvt-unicode, vim-gtk, htop, i3-wm,
  i3status, i3lock, dunst, rofi, suckless-tools, fonts-dejavu-core, conky,
  luajit, nitrogen, zsh, zsh-doc, stow, gitk, git-gui, silversearcher-ag,
- ack-grep, tmux, tree, fonts-font-awesome, meld, compton
+ ack-grep, tmux, tree, fonts-font-awesome, meld, compton, xfonts-terminus,
+ xfonts-terminus-oblique
 Recommends: fonts-iosevka, fonts-iosevka-term, fonts-iosevka-slab,
- fonts-iosevka-term-slab
+ fonts-iosevka-term-slab, dex
 Description: Install all needed packages for desktop usage
  This is an empty package to install required packages for desktop setup.
 
